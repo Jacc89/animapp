@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CompartidosModule } from './compartidos/compartidos.module';
+import { AnimappModule } from './animapp/animapp.module';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -10,7 +12,11 @@ import { CompartidosModule } from './compartidos/compartidos.module';
   ],
   imports: [
     BrowserModule, 
-    CompartidosModule
+    CompartidosModule,
+    AnimappModule, 
+    HttpClientModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
